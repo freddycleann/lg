@@ -1,0 +1,110 @@
+/* General body styling for a clean, centered layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container, .auth-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px; /* Adjust as needed for each page */
+    margin: 1rem;
+    padding: 2rem;
+}
+
+/* Heading styles */
+h1, h2 {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Input styling for forms */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #0056b3; /* Frame color */
+    padding: 0.65rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #003a75; /* Darker frame on hover */
+}
+
+/* Link styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Message styles for login/register links */
+.message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Layout for pages with multiple cards (like dashboard) */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vivify-X</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-image: url('goldground.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+            font-size: 20px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-family: 'Cinzel', serif;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #ffcc33, #ffd700, #ffcc33);
+            z-index: 1;
+            transition: left 0.3s ease;
+        }
+
+        nav a:hover::before {
+            left: 0;
+        }
+
+        nav a span {
+            position: relative;
+            z-index: 2;
+        }
+
+        nav a:hover span {
+            color: #000;
+        }
+
+        .content-container {
+            padding: 100px 20px 60px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: transparent;
+            background: linear-gradient(90deg, #c29d38, #e5c16d);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .paragraph-frame {
+            margin: 20px 0;
+            border: 2px solid #d4af37;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(28, 28, 28, 0.9);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), 0 0 10px rgba(212, 175, 55, 0.8);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #d4af37;
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/"><span>Home</span></a>
+        <a href="/tools"><span>Tools</span></a>
+        <a href="/about"><span>About</span></a>
+        <a href="/contact"><span>Contact</span></a>
+    </nav>
+
+    <!-- About Content -->
+    <div class="content-container">
+        <h1>About Vivify-X</h1>
+        <div class="paragraph-frame">
+            <p>
+                Welcome to Vivify-X, where innovation meets imagination! Our mission is to empower creators, developers, and dreamers 
+                to bring their ideas to life using cutting-edge technology and tools. Whether you're building a game, a website, or a 
+                cross-platform application, Vivify-X provides the framework to help you achieve your goals with ease and creativity.
+            </p>
+        </div>
+        <div class="paragraph-frame">
+            <p>
+                Our platform is designed with simplicity, efficiency, and flexibility in mind. With Vivify-X, you can create projects 
+                for web, mobile, PC, or games—all from a single, unified codebase. We believe in the power of technology to transform 
+                visions into reality, and we're here to support you every step of the way.
+            </p>
+        </div>
+        <div class="paragraph-frame">
+            <p>
+                Thank you for choosing Vivify-X as your development companion. Together, let's shape the future of innovation!
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Vivify-X. All rights reserved.
+    </footer>
+</body>
+</html>
