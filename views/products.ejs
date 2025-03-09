@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            background: url('https://i.gifer.com/7TPX.gif') center/cover fixed;
+        }
+        .fire-glow {
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ff4500; }
+            100% { text-shadow: 0 0 30px #ff8c00; }
+        }
+        .bounce:hover {
+            animation: bounce 0.5s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+        .fire-frame {
+            border: 3px solid transparent;
+            border-image: url('https://i.imgur.com/kpDf4hx.png') 30 stretch;
+        }
+    </style>
+</head>
+<body class="h-screen flex justify-center items-center" style="background: url('https://i.gifer.com/VpZl.gif') center/cover fixed !important;">
+    <div class="bg-gray-900 p-10 rounded-2xl shadow-2xl w-full max-w-lg transform transition-all duration-300 hover:scale-105 fire-frame">
+        <h2 class="text-4xl font-extrabold text-center text-yellow-400 mb-8 fire-glow">🔥 Fiery Product 🔥</h2>
+        
+        <img class="w-full h-auto object-cover rounded-lg shadow-lg mb-6 fire-frame" src="https://via.placeholder.com/600x600" alt="Product Image">
+
+        <p class="text-lg text-gray-300 mb-4 text-center">Experience the heat of excellence with our latest product.</p>
+
+        <div class="text-2xl font-semibold text-yellow-400 text-center mb-6">$299.99</div>
+
+        <div class="text-center mb-6">
+            <h3 class="text-xl font-medium text-gray-200">Choose Color</h3>
+            <div class="flex justify-center space-x-4 mt-2">
+                <button class="w-8 h-8 rounded-full bg-red-600 focus:outline-none border-2 border-yellow-400"></button>
+                <button class="w-8 h-8 rounded-full bg-orange-500 focus:outline-none border-2 border-yellow-400"></button>
+                <button class="w-8 h-8 rounded-full bg-yellow-500 focus:outline-none border-2 border-yellow-400"></button>
+            </div>
+        </div>
+
+        <div class="text-center mb-6">
+            <h3 class="text-xl font-medium text-gray-200">Select Size</h3>
+            <select class="mt-2 p-2 border border-yellow-500 bg-gray-800 rounded-lg text-white focus:outline-none">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+            </select>
+        </div>
+
+        <button class="w-full py-3 px-4 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 text-white font-bold rounded-lg bounce hover:opacity-90 focus:ring-4 focus:ring-red-600 transition-all duration-300">
+            Add to Cart 🔥
+        </button>
+    </div>
+</body>
+</html>
